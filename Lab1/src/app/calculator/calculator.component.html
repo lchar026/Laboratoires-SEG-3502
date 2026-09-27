@@ -1,0 +1,42 @@
+<table>
+  <!-- Ligne pour le premier nombre -->
+  <tr>
+    <td>
+      <label for="num1">Premier nombre:</label>
+    </td>
+    <td>
+      <input type="number" id="num1" #num1>
+    </td>
+  </tr>
+
+  <!-- Ligne pour le second nombre -->
+  <tr>
+    <td>
+      <label for="num2">Second nombre:</label>
+    </td>
+    <td>
+      <input type="number" id="num2" #num2>
+    </td>
+  </tr>
+
+  <!-- Ligne pour afficher le résultat -->
+  <tr>
+    <td>
+      <label>Résultat:</label>
+    </td>
+    <td>
+      <!-- L'interpolation {{resultValue}} affichera le calcul en temps réel -->
+      <strong>{{ resultValue }}</strong>
+    </td>
+  </tr>
+
+  <!-- Ligne pour les quatre boutons d'opérations -->
+  <tr>
+    <td colspan="2">
+      <button (click)="calculate(num1.value, num2.value, '+')">+</button>
+      <button (click)="calculate(num1.value, num2.value, '-')">-</button>
+      <button (click)="calculate(num1.value, num2.value, '*')">*</button>
+      <button (click)="calculate(num1.value, num2.value, '/')">/</button>
+    </td>
+  </tr>
+</table>
