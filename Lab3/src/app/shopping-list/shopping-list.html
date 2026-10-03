@@ -1,0 +1,11 @@
+<div class="shopping-list">
+  @for (item of items; track $index) {
+    <div class="shopping-list-row">
+      <span class="shopping-list-item">{{ item }}</span>
+      <button class="btn btn-secondary shopping-list-btn"
+              (click)="remove($index)">
+        Supprimer
+      </button>
+    </div>
+  }
+</div>

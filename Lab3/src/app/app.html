@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div class="container">
+  <app-add-item (itemAdded)="onItemAdded($event)"></app-add-item>
+  <app-shopping-list
+    [items]="items"
+    (itemRemoved)="onItemRemoved($event)">
+  </app-shopping-list>
+</div>
