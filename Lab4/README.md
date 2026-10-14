@@ -26,3 +26,5 @@ npx ng serve
 ```
 
 Puis ouvrir http://localhost:4200/
+
+mes parties ont été ajoutées avec succès dans les fichiers, j'ai du ainsi repush le folder entier depuis mon vscode! 
