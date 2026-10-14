@@ -1,0 +1,28 @@
+@if (contact) {
+  <h2>Coordonnées soumises</h2>
+  <table class="result-table">
+    <tbody>
+      <tr>
+        <th>Prénom</th>
+        <td>{{ contact.firstName }}</td>
+      </tr>
+      <tr>
+        <th>Nom</th>
+        <td>{{ contact.lastName }}</td>
+      </tr>
+      <!-- Ligne ajoutée pour afficher le courriel juste au-dessus du téléphone -->
+      <tr>
+        <th>Courriel</th>
+        <td>{{ contact.email || 'Non fourni' }}</td>
+      </tr>
+      <tr>
+        <th>Téléphone</th>
+        <td>{{ contact.phone || 'Non fourni' }}</td>
+      </tr>
+    </tbody>
+  </table>
+} @else {
+  <p>Aucune soumission en cours.</p>
+}
+
+<a routerLink="/formulaire" class="back-link">Retour au formulaire</a>
