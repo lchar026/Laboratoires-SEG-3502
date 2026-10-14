@@ -1,0 +1,22 @@
+.result-table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.result-table th {
+  background-color: #eef2f7;
+  width: 40%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 10px;
+}

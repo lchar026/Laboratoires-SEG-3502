@@ -1,0 +1,33 @@
+/* Style pour les champs de saisie de nombres */
+input {
+  border-style: double;
+  width: 150px;
+}
+
+/* Style pour les boutons d'opérations (+ - * /) */
+button {
+  background-color: darkcyan;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Changement de couleur au survol du bouton */
+button:hover {
+  background-color: #006666;
+}
+
+/* Style pour les étiquettes de texte */
+label {
+  font-size: 20px;
+}
+
+/* Espace autour de notre tableau */
+table {
+  margin-top: 15px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}

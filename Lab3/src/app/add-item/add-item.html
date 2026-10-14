@@ -1,0 +1,11 @@
+<div class="add-item">
+  <input #itemInput
+         type="text"
+         class="form-control add-item-input"
+         placeholder="Nouvel article"
+         (keyup.enter)="add(itemInput.value, itemInput)">
+  <button class="btn btn-secondary add-item-btn"
+          (click)="add(itemInput.value, itemInput)">
+    Ajouter
+  </button>
+</div>
