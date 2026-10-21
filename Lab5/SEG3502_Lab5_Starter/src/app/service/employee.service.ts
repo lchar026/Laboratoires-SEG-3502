@@ -3,7 +3,8 @@ import {
   Firestore,
   collection,
   collectionData,
-  CollectionReference
+  CollectionReference,
+  addDoc
 } from '@angular/fire/firestore';
 import { Observable, map } from 'rxjs';
 import { Employee } from '../model/employee';
@@ -24,6 +25,7 @@ export class EmployeeService {
     );
   }
 
-  addEmployee(employee: Employee) {
-  }
+ addEmployee(employee: Employee) {
+  return addDoc(this.employeesRef, employee);
+}
 }
