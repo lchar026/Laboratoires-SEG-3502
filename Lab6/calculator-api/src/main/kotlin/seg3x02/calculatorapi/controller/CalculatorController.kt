@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("calculator")
 class CalculatorController {
+
     @GetMapping("/add/{n1}/{n2}")
     fun add(@PathVariable n1: Double, @PathVariable n2: Double) = n1 + n2
 
@@ -16,4 +17,12 @@ class CalculatorController {
 
     @GetMapping("/multiply/{n1}/{n2}")
     fun multiply(@PathVariable n1: Double, @PathVariable n2: Double) = n1 * n2
+
+    @GetMapping("/divide/{n1}/{n2}")
+    fun divide(@PathVariable n1: Double, @PathVariable n2: Double): Double {
+        if (n2 == 0.0) {
+            throw IllegalArgumentException("Division by zero")
+        }
+        return n1 / n2
+    }
 }
