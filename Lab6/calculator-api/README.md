@@ -24,3 +24,4 @@ Service Web REST Calculator avec Spring Boot + Kotlin.
 - Ajouter l'endpoint `divide` dans `CalculatorController` (`GET /calculator/divide/{n1}/{n2}`)
 
 ## On doit aussi faire le rapport
+----> excellent tout a été mis à jour et testé avec succès , le rapport est aussi pret à la soumission !
