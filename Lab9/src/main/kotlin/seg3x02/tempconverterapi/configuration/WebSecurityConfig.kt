@@ -27,13 +27,20 @@ class WebSecurityConfig {
             .httpBasic(Customizer.withDefaults())
         return http.build()
     }
+@Bean
+fun userDetailsService(encoder: PasswordEncoder): UserDetailsService {
 
-    @Bean
-    fun userDetailsService(encoder: PasswordEncoder): UserDetailsService {
-        val user1 = User.withUsername("user1")
-            .password(encoder.encode("pass1"))
-            .roles("USER")
-            .build()
-        return InMemoryUserDetailsManager(user1)
-    }
+    val user1 = User.withUsername("user1")
+        .password(encoder.encode("pass1"))
+        .roles("USER")
+        .build()
+
+    val user2 = User.withUsername("user2")
+        .password(encoder.encode("pass2"))
+        .roles("USER")
+        .build()
+
+    return InMemoryUserDetailsManager(user1, user2)
+}
+ 
 }
