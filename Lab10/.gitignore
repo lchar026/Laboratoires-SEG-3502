@@ -1,0 +1,24 @@
+### Spring Boot (books-rest-api) ###
+books-rest-api/.gradle
+books-rest-api/build/
+!books-rest-api/gradle/wrapper/gradle-wrapper.jar
+!books-rest-api/**/src/main/**/build/
+!books-rest-api/**/src/test/**/build/
+
+### Angular (bookstore-client) ###
+bookstore-client/node_modules
+bookstore-client/dist
+bookstore-client/.angular
+bookstore-client/.nx-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
